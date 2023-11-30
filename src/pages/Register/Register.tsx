@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import addAvatar from "../../assets/img/addAvatar.png";
 export const Register = () => {

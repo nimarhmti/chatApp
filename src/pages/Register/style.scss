@@ -1,8 +1,8 @@
-$primary-color: #a7bcff;
-$secondary-color: #5d5b8d;
-
+@use "../../Styles/_colors/color" as Color;
+// $primary-color: #a7bcff;
+// $secondary-color: #5d5b8d;
 .formContainer {
-  background-color: $primary-color;
+  background-color: Color.$primary-color;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ $secondary-color: #5d5b8d;
     flex-direction: column;
     gap: 10px;
     .logo {
-      color: $secondary-color;
+      color: Color.$secondary-color;
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 3px;
@@ -30,7 +30,7 @@ $secondary-color: #5d5b8d;
       padding: 15px;
       border: none;
       width: 250px;
-      border-bottom: 1px solid $primary-color;
+      border-bottom: 1px solid Color.$primary-color;
       outline: none;
       &:nth-child(4) {
         border: none;
@@ -50,11 +50,11 @@ $secondary-color: #5d5b8d;
       }
       span {
         font-size: 12px;
-        color: $secondary-color;
+        color: Color.$secondary-color;
       }
     }
     button {
-      background-color: $primary-color;
+      background-color: Color.$primary-color;
       color: #fff;
       border-radius: 5px;
       border: none;
@@ -64,7 +64,7 @@ $secondary-color: #5d5b8d;
       width: 100%;
     }
     p {
-      color: $secondary-color;
+      color: Color.$secondary-color;
       font-size: 13px;
     }
   }

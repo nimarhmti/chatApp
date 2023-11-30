@@ -1,6 +1,5 @@
-import React from "react";
 import "./style.scss";
-import addAvatar from "../../assets/img/addAvatar.png";
+
 const Login = () => {
   return (
     <div className="formContainer">

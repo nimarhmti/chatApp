@@ -1,10 +1,9 @@
-import { Register } from "./pages/Register/Register";
-import Login from "./pages/login/Login";
+import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-      <Login />
+      <Home />
     </>
   );
 }

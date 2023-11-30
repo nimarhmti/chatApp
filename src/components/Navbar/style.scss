@@ -1,0 +1,33 @@
+@use "../../Styles/_colors/color" as Color;
+
+.navbar {
+  display: flex;
+  background-color: Color.$darker-color;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+  span {
+    color: Color.$white-color;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: Color.$white-color;
+    img {
+      border-radius: 50%;
+      background-color: Color.$white-color;
+      height: 24px;
+      width: 24px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    button {
+      background-color: Color.$secondary-color;
+      border: none;
+      color: Color.$white-color;
+      padding: 5px;
+    }
+  }
+}
