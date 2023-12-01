@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import { UserItem } from "./userItem";
 export const Users = () => {
