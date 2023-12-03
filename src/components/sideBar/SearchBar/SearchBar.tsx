@@ -10,7 +10,7 @@ export const SearchBar = () => {
     <div className="searchBar">
       <input
         type="text"
-        placeholder="Search"
+        placeholder="find a user"
         value={value}
         onChange={onChangeHandler}
       />

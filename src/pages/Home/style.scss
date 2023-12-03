@@ -19,6 +19,7 @@
   .sidebar {
     flex: 1;
     background-color: Color.$secondary-color;
+    position: relative;
   }
   .chat {
     flex: 2;

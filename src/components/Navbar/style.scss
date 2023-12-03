@@ -1,5 +1,5 @@
 @use "../../Styles/_colors/color" as Color;
-
+@use "../../Styles//breakPoint/media";
 .navbar {
   display: flex;
   background-color: Color.$darker-color;
@@ -7,8 +7,14 @@
   justify-content: space-between;
   height: 50px;
   padding: 10px;
+
   span {
+    //logo
     color: Color.$white-color;
+    //mobile device : we used media query in this section
+    @include media.max-width(small) {
+      display: none;
+    }
   }
   .user {
     display: flex;
@@ -24,10 +30,18 @@
       cursor: pointer;
     }
     button {
+      //logout button
       background-color: Color.$secondary-color;
       border: none;
       color: Color.$white-color;
       padding: 5px;
+      //mobile device : we used media query in this section
+      @include media.max-width(medium) {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: Color.$darker-color;
+      }
     }
   }
 }

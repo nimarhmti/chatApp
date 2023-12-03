@@ -1,6 +1,8 @@
 @use "../../../Styles/_colors/color" as Color;
+@use "../../../Styles/breakPoint/media";
+
 .UserContainer {
-  height: calc(100% - 50px - 50px);
+  height: calc(100% - 34px - 50px);
   overflow-y: auto;
   padding: 10px;
 
@@ -21,9 +23,14 @@
       color: Color.$white-color;
     }
     span {
+      //last text witch sended :message info
       font-size: 12px;
       font-weight: 200;
       color: Color.$gray-color;
+      //tablet device : we used media query in this section
+      @include media.max-width(medium) {
+        display: none;
+      }
     }
   }
 }
